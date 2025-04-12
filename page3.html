@@ -1,62 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>A Hug for You 🤗</title>
+  <meta charset="UTF-8" />
+  <title>A Warm Hug 🤗</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
     body {
-      font-family: 'Quicksand', sans-serif;
-      background: #f0fff9;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right top, #f3f5ff, #fff0f6);
       margin: 0;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
     }
 
-    .card {
-      text-align: center;
-      background: white;
-      padding: 30px;
+    .glass-card {
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
       border-radius: 20px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-      max-width: 500px;
+      padding: 40px;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
     }
 
     h1 {
-      color: #5abfaa;
+      font-family: 'Dancing Script', cursive;
+      font-size: 3rem;
+      color: #57b3b0;
+      margin-bottom: 10px;
     }
 
     p {
+      font-size: 1.2rem;
       color: #444;
-      line-height: 1.6;
+      line-height: 1.7;
+      margin: 20px 0;
     }
 
     .btn {
-      margin-top: 20px;
-      background: #5abfaa;
+      background: #57b3b0;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 28px;
       border: none;
-      border-radius: 10px;
+      border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
     }
 
     .btn:hover {
-      background: #4aa594;
+      background: #45a3a0;
+    }
+
+    .hearts {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.5rem;
+      animation: float 3s ease-in-out infinite;
+      color: #57b3b0;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(-50%, 0); }
+      50% { transform: translate(-50%, -10px); }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Here’s a virtual hug 🤗</h1>
+  <div class="glass-card">
+    <h1>A Warm Hug 🤗</h1>
     <p>
-      Close your eyes for a moment and imagine me hugging you tight,  
-      telling you that everything’s going to be okay.
+      I know you’re tired. I know your heart feels heavy.<br />
+      So here's a little hug from me — sent through the screen,<br />
+      holding you close and reminding you… you’re not alone.
     </p>
     <a class="btn" href="page4.html">Next →</a>
   </div>
+  <div class="hearts">💚 💙 💜</div>
 </body>
 </html>
