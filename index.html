@@ -5,89 +5,18 @@
   <title>Hey Love 💖</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right top, #ffe4ec, #e9f7ff);
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      animation: fadeIn 1s ease-in;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .glass-card {
-      background: rgba(255, 255, 255, 0.4);
-      backdrop-filter: blur(10px);
-      border-radius: 20px;
-      padding: 40px;
-      max-width: 600px;
-      text-align: center;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-      transition: transform 0.4s ease;
-    }
-
-    .glass-card:hover {
-      transform: scale(1.02);
-    }
-
-    h1 {
-      font-family: 'Dancing Script', cursive;
-      font-size: 3rem;
-      color: #ff679d;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.2rem;
-      color: #444;
-      margin-bottom: 30px;
-      line-height: 1.6;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 28px;
-      border-radius: 30px;
-      background-color: #ff679d;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #e85689;
-    }
-
-    .hearts {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 1.5rem;
-      animation: float 3s ease-in-out infinite;
-      color: #ff679d;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translate(-50%, 0); }
-      50% { transform: translate(-50%, -10px); }
-    }
-  </style>
+  <link rel="stylesheet" href="page.css">
 </head>
 <body>
-  <div class="
+  <div class="glass-card">
+    <h1>Hey Love 💖</h1>
+    <p>
+      I know things have been a little tough lately.<br>
+      But I want to remind you how incredible you are — inside and out.<br>
+      Let me take you on a little journey to heal your heart.
+    </p>
+    <a href="page2.html" class="btn">Take me there 🌸</a>
+  </div>
+  <div class="hearts">💗 💞 💕</div>
+</body>
+</html>
