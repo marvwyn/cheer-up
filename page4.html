@@ -1,59 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Always Here 💌</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
     body {
-      font-family: 'Quicksand', sans-serif;
-      background: linear-gradient(to top, #ffeaf0, #fff9fb);
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right top, #ffe4ec, #e9f7ff);
       margin: 0;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
     }
 
-    .card {
-      text-align: center;
-      background: white;
-      padding: 30px;
+    .glass-card {
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
       border-radius: 20px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-      max-width: 500px;
+      padding: 40px;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
     }
 
     h1 {
-      color: #e86692;
+      font-family: 'Dancing Script', cursive;
+      font-size: 3rem;
+      color: #ff679d;
+      margin-bottom: 10px;
     }
 
     p {
+      font-size: 1.2rem;
       color: #444;
-      line-height: 1.6;
+      line-height: 1.7;
+      margin: 20px 0;
     }
 
     .heart {
-      font-size: 2.5rem;
-      animation: beat 1.5s infinite;
-      color: #e86692;
+      font-size: 3rem;
+      color: #ff679d;
+      animation: pulse 1.8s infinite;
       margin-top: 20px;
     }
 
-    @keyframes beat {
+    @keyframes pulse {
       0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.2); }
+      50% { transform: scale(1.3); }
+    }
+
+    .hearts {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.5rem;
+      animation: float 3s ease-in-out infinite;
+      color: #ff679d;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(-50%, 0); }
+      50% { transform: translate(-50%, -10px); }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Forever by your side 💌</h1>
+  <div class="glass-card">
+    <h1>Always Here 💌</h1>
     <p>
-      No matter what comes your way, I’ll be here holding your hand (virtually and emotionally).  
-      You’re never alone. I believe in you. Always. 💖
+      Whatever happens, whatever result comes<br />
+      I’ll still be here, loving you endlessly.<br />
+      You are more than marks, more than grades.<br />
+      You're my entire world. 💖
     </p>
     <div class="heart">❤️</div>
   </div>
+  <div class="hearts">💗 💞 💕</div>
 </body>
 </html>
