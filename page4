@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Always Here 💌</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to top, #ffeaf0, #fff9fb);
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      text-align: center;
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+      max-width: 500px;
+    }
+
+    h1 {
+      color: #e86692;
+    }
+
+    p {
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .heart {
+      font-size: 2.5rem;
+      animation: beat 1.5s infinite;
+      color: #e86692;
+      margin-top: 20px;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Forever by your side 💌</h1>
+    <p>
+      No matter what comes your way, I’ll be here holding your hand (virtually and emotionally).  
+      You’re never alone. I believe in you. Always. 💖
+    </p>
+    <div class="heart">❤️</div>
+  </div>
+</body>
+</html>
